@@ -1,5 +1,5 @@
 mudar,idade,cidade,genero,animal, pessoas,trabalho,renda,conforto,escolaridade
-s, 23 , Fragoso , mulher , 1 , 1 , s , 1200.0 , n , superior cursando
+s, 23 , fragoso , mulher , 1 , 1 , s , 1200.0 , n , superior cursando
 s, 24 , fragoso , homem , 1 , 1 , s , 1200.0 , n , superior incompleto
 s, 48 , paulista , mulher , 1 , 1 , s , 462.5 , n , superior completo
 n, 15 , paulista , mulher , 1 , 1 , n , 462.5 , n , medio cursando

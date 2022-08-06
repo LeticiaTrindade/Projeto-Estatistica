@@ -10,15 +10,26 @@ pie(prop.table(table(dados$conforto)), main = "Distribução por conforto")
     
 pie(prop.table(table(dados$escolaridade)), main = "Distribução por escolaridade")
 
-pie(prop.table(table(dados$idade)), main = "Distribução por idade")
+hist((dados$idade), main = "Distribução por idade")
 
 hist(dados$animal, main = "Distribução por quantidade de animais")
 
 pie(prop.table(table(dados$pessoas)), main = "Distribução por pessoas que moram junto")
 
-pie(prop.table(table(dados$renda)), main = "Distribução por renda")
+hist((dados$renda), main = "Distribução por renda")
 
 barplot(tapply(dados$renda, dados$conforto, mean), col= "orange", horiz = T)
 
 boxplot(dados$renda, col="pink")
+
+renda= dados$renda
+QuantidadePessoas= dados$pessoas
+plot(renda, QuantidadePessoas)
+
+barplot(table(dados$conforto, dados$mudar))
+legend("topright", c("Conforto N, Mudar N","Conforto N, Mudar S", "Conforto S, Mudar N", "Conforto S, Mudar S"),
+       col=c("black","gray","black","gray"), lty = 1)
+
+table(dados$conforto, dados$mudar)
+
 
